@@ -21,17 +21,16 @@ body {
     position: relative;
     background:  url("clock2.png") top left no-repeat, linear-gradient(to bottom, #ffe9ae71 50%, #ffe9ae71 50%);
     background-size: cover;
-    
 }
 .container .clock .sec {
     width: 54%;
     height: 3px;
     background: linear-gradient(to left, #353b48 90%,transparent 50%);
-
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%) rotate(90deg);
+    transform: translate(0, -50%);
     transform-origin: 92%;
+    transition: 100ms;
 }
 .container .clock .min {
     width: 54%;
@@ -39,8 +38,9 @@ body {
     background: linear-gradient(to left, #8c7ae6 70%,transparent 50%);
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%) rotate(90deg);
+    transform: translate(0, -50%);
     transform-origin: 92%;
+    transition: 100ms;
 }
 .container .clock .hour {
     width: 54%;
@@ -48,6 +48,7 @@ body {
     background: linear-gradient(to left, #44bd32 50%,transparent 50%);
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%) rotate(90deg);
+    transform: translate(0, -50%);
     transform-origin: 92%;
+    transition: 100ms;
 }
