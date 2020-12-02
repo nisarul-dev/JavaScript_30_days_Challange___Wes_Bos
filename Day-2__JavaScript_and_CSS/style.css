@@ -54,10 +54,10 @@ body {
 }
 
 .container p {
-    font-family: Impact, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Anton', sans-serif;
     font-size: 2.5em;
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 15vh;
 }
 
 .container p #sec {
