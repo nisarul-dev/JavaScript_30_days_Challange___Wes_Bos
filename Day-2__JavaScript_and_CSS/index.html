@@ -33,7 +33,7 @@
             console.log(sec);
             if (secDegree == 90) {
                 secHand.style.transition = "1ms";
-                secHand.style.transform = `rotate(${secDegree}deg)`;    
+                secHand.style.transform = `rotate(${secDegree}deg)`;
             } else {
                 secHand.style.transition = "100ms";
                 secHand.style.transitionTimingFunction = "cubic-bezier(0.06, 3.14, 0.58, 1)";
@@ -47,7 +47,7 @@
 
             minHand.style.transform = `rotate(${minDegree}deg)`;
             document.getElementById("min").innerText = prependZero(min);
-            
+
 
             // Hours
             const hour = date.getHours();
