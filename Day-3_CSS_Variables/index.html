@@ -51,9 +51,9 @@
         id="spacing"
         type="range"
         name="spacing"
-        min="10"
+        min="20"
         max="200"
-        value="10"
+        value="20"
         data-sizing="px"
       />
 
@@ -64,19 +64,27 @@
         name="blur"
         min="0"
         max="25"
-        value="10"
+        value="0"
         data-sizing="px"
       />
 
-      <label for="base">Base Color</label>
-      <input id="base" type="color" name="base" value="#ffc600" />
+      <label for="base-color">Base Color</label>
+      <input id="base-color" type="color" name="base-color" value="#ffc600" />
     </div>
 
     <img src="photo.jpg" />
 
     <script>
       const inputs = document.querySelectorAll(".controls input");
-      console.log(inputs);
+      function handleUpdate() {
+        const suffix = this.dataset.sizing || "";
+        document.documentElement.style.setProperty(
+          `--${this.name}`,
+          this.value + suffix
+        );
+      }
+      inputs.forEach((x) => x.addEventListener("change", handleUpdate));
+      inputs.forEach((x) => x.addEventListener("mousemove", handleUpdate));
     </script>
   </body>
 </html>
